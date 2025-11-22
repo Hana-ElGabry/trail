@@ -5,12 +5,13 @@ import { getFirestore, collection, addDoc, query, where, onSnapshot, deleteDoc, 
 // --- FIREBASE CONFIGURATION ---
 // TODO: Replace the following config with your own from the Firebase Console.
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY_HERE",
-    authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_PROJECT_ID.appspot.com",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
+    apiKey: "AIzaSyCYo9TdTn9PiqnOOtWg2-Q5_G-qZ7PSKzs",
+    authDomain: "my-todo-app-9d46e.firebaseapp.com",
+    projectId: "my-todo-app-9d46e",
+    storageBucket: "my-todo-app-9d46e.firebasestorage.app",
+    messagingSenderId: "384897406576",
+    appId: "1:384897406576:web:f2a64e049f5576d0f386b5",
+    measurementId: "G-K0S65PZY5Q"
 };
 
 // Initialize Firebase
