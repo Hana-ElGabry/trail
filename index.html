@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <div class="background-blobs">
         <div class="blob blob-1"></div>
@@ -19,6 +21,15 @@
 
     <div class="container">
         <header>
+            <div class="header-top">
+                <div class="user-profile" id="user-profile" style="display: none;">
+                    <img id="user-avatar" src="" alt="User">
+                    <div class="user-info">
+                        <span id="user-name"></span>
+                        <button id="logout-btn">Sign Out</button>
+                    </div>
+                </div>
+            </div>
             <h1>My Tasks</h1>
             <p class="subtitle">Stay organized, stay focused.</p>
             <div class="progress-container">
@@ -41,13 +52,30 @@
         <ul id="task-list" class="task-list">
             <!-- Tasks will be injected here -->
         </ul>
-        
+
         <div class="empty-state" id="empty-state">
             <i class="fa-regular fa-clipboard"></i>
             <p>No tasks yet. Add one above!</p>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Login Overlay -->
+    <div id="login-overlay" class="login-overlay">
+        <div class="login-card">
+            <h2>Welcome Back</h2>
+            <p>Sign in to sync your tasks across devices</p>
+            <button id="google-login-btn" class="google-btn">
+                <i class="fa-brands fa-google"></i>
+                Sign in with Google
+            </button>
+            <button id="guest-login-btn" class="guest-btn">
+                Continue as Guest (Local Only)
+            </button>
+        </div>
+    </div>
+
+    <!-- Firebase SDKs -->
+    <script type="module" src="script.js"></script>
 </body>
+
 </html>
