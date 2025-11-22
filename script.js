@@ -5,7 +5,6 @@ import { getFirestore, collection, addDoc, query, where, onSnapshot, deleteDoc, 
 // --- FIREBASE CONFIGURATION ---
 // TODO: Replace the following config with your own from the Firebase Console.
 const firebaseConfig = {
-    apiKey: "AIzaSyCYo9TdTn9PiqnOOtWg2-Q5_G-qZ7PSKzs",
     authDomain: "my-todo-app-9d46e.firebaseapp.com",
     projectId: "my-todo-app-9d46e",
     storageBucket: "my-todo-app-9d46e.firebasestorage.app",
